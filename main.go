@@ -34,13 +34,6 @@ func lowercaseFirstLetter(word string) string {
 	a[0] = unicode.ToLower(a[0])
 	return string(a)
 }
-func generateName() string {
-	rand.Seed(time.Now().UnixNano())
-	Noun1 := uppercaseFirstLetter(randomNoun())
-	Noun2 := uppercaseFirstLetter(randomNoun())
-	Adjective := lowercaseFirstLetter(randomAdjective())
-	return Noun1 + Adjective + " " + Noun2
-}
 
 func main() {
 
