@@ -1,4 +1,5 @@
 package main
+
 type abilityscores struct {
 	strength     []int
 	dexterity    []int
