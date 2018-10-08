@@ -11,14 +11,6 @@ const charset = "abcdefghijklmnopqrstuvwxyz" +
 
 var seededRand = rand.New(rand.NewSource(time.Now().UnixNano()))
 
-func randomAdjective() string {
-	return Adjectives[rand.Intn(len(Adjectives)-1)]
-}
-
-func randomNoun() string {
-	return Nouns[rand.Intn(len(Nouns)-1)]
-}
-
 func StringWithCharset(length int, charset string) string {
 	b := make([]byte, length)
 	for i := range b {
