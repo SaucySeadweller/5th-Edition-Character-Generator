@@ -1,7 +1,6 @@
 package main
 
-func adjective(){
- var adjectives = []string{"Black",
+var Adjectives = []string{"Black",
 	"Grey",
 	"Violet",
 	"Vermillion",
@@ -11,5 +10,3 @@ func adjective(){
 	"Brown",
 	"Bronze",
 	"Yellow", "Orange", "Black", "Blue", "Purple", "White", "Pink", "Maroon", "Cyan", ""}
- 
-}

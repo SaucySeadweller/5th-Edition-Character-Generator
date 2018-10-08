@@ -9,5 +9,5 @@ type Race struct {
 	Weight           int
 	Speed            int
 	Languages        []string
-	Abilityscores    []int
+	abilityscores    map[string]int
 }

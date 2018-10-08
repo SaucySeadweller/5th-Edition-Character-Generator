@@ -1,10 +1,8 @@
 package main
 
-
-
 type Spell struct {
-SpellName string
-Effect        string
+	SpellName     string
+	Effect        string
 	Damage        int
 	Range         int
 	SpellLevel    int
@@ -15,6 +13,8 @@ Effect        string
 	Duration      int
 	Concentration bool
 	Ritual        bool
+	AreaOfEffect  string
+	Target        string
 }
 type School struct {
 	Abjuration    string

@@ -1,6 +1,7 @@
 package main
 
 type Feat struct {
-	FeatName string
-	Effect   string
+	FeatName     string
+	Prerequisite string
+	Effect       string
 }
