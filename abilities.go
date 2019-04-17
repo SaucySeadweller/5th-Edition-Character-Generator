@@ -1,12 +1,12 @@
 package main
 
-type abilityscores struct {
-	strength     []int
-	dexterity    []int
-	constitution []int
-	intelligence []int
-	wisdom       []int
-	charisma     []int
+type AbilityScores struct {
+	Strength     int
+	Dexterity    int
+	Constitution int
+	Intelligence int
+	Wisdom       int
+	Charisma     int
 }
 type Abilities struct {
 	Feats  []Feat
