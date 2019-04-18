@@ -12,6 +12,7 @@ type Class struct {
 	D  Druid
 	M  Monk
 	S  Sorcerer
+	RA Ranger
 }
 
 type Rogue struct {

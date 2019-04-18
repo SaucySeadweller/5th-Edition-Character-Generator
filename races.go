@@ -11,7 +11,7 @@ func init() {
 }
 
 type LifeSpan struct {
-	Adulthood, OldAge int
+	min, max int
 }
 type Race struct {
 	RaceName         string
@@ -25,7 +25,7 @@ type Race struct {
 	Abilityscores    map[string]int
 }
 
-var m = map[string]LifeSpan{
+var ageRange = map[string]LifeSpan{
 	"Human":             {16, 75},
 	"Dwarf":             {50, 350},
 	"Duergar":           {50, 350},
@@ -44,11 +44,11 @@ var m = map[string]LifeSpan{
 	"Eladrin":           {100, 750},
 	"Sea Elf":           {100, 750},
 	"High Elf":          {100, 750},
-	"Shadar-Kai":        {},
+	"Shadar-Kai":        {20, 1000},
 	"Wood Elf":          {100, 750},
 	"Genasi":            {16, 120},
-	"Githyanki":         {},
-	"Githzerai":         {},
+	"Githyanki":         {16, 100},
+	"Githzerai":         {16, 100},
 	"Gnome":             {40, 350},
 	"Goliath":           {16, 75},
 	"Kenku":             {12, 60},
@@ -60,7 +60,7 @@ var m = map[string]LifeSpan{
 }
 
 func raceAge() {
-	fmt.Println(m)
+	fmt.Println(ageRange)
 }
 func pickRace() string {
 	Race := []string{
