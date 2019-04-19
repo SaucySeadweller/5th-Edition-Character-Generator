@@ -3,8 +3,8 @@ package main
 type Spell struct {
 	SpellName     string
 	Effect        string
-	Damage        int
-	Range         int
+	Damage        string
+	Range         string
 	SpellLevel    int
 	Components    Component
 	CastTime      int
@@ -28,7 +28,7 @@ type School struct {
 	Transmutation string
 }
 type Component struct {
-	Verbal   string
-	Somatic  string
-	Material string
+	Verbal   bool
+	Somatic  bool
+	Material bool
 }
